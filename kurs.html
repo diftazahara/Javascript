@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kurs rupiah difta zahara</title>
+    <script>
+        function menghitung_valas(){
+            let valas =document.getElementById("valas").value; 
+            let nilai =document.getElementById("nilai").value;
+            document.getElementById("hasil").value = nilai * valas; 
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>
+            kurs rupiah - mata uang asing
+        </legend>
+        <table border="1">
+            <tr>
+                <td>masukan nilai</td>
+                <td>valas</td>
+                <td>nilai rupiah</td>
+            </tr>
+            <tr>
+                <td> <input type="text" name="nilai" id="nilai" onchange="menghitung_valas()"> </td>
+                <td>
+                    <select name="valas" id="valas" onchange="menghitung_valas()">
+                        <option value="9915">dollar us</option>
+                        <option value="13472">dollar singapore</option>
+                        <option value="874">ringgit malaysia</option>
+                        <option value="120">yen jepang</option>
+                        <option value="15888">euro</option>
+                        <option value="3592">riyal arab saudi</option>  
+                    </select>
+                </td>
+                <td> <input type="text" name="hasil" id="hasil"> </td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</html>
