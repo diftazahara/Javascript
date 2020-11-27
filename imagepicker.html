@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IMAGE PICKER</title>
+  </head>
+
+  <body style="margin: 200px">
+    <nav style="position: inherit">
+      <h1>DIFTA ZAHARA</h1>
+    </nav>
+    <center>
+      <select onchange="gantigambar();" id="listgambar">
+        <option
+          value="https://awsimages.detik.net.id/content/2014/03/30/157/kampanye-jujur-CV.jpg"
+        >
+          PILIH PICTURES
+        </option>
+        <option
+          value="https://2.bp.blogspot.com/-ccpW3JOa9BA/Te8uj6bc56I/AAAAAAAAAA0/voFXq36KjkY/s1600/Naruto-Uzumaki-uzumaki-naruto-964976_692_659.jpg"
+        >
+          NARUTO
+        </option>
+        <option
+          value="https://selular.id/wp-content/uploads/2018/12/PUBG-Mobile-Campus-Championship-2018.jpg"
+        >
+          PUBG
+        </option>
+        <option
+          value="https://awsimages.detik.net.id/community/media/visual/2019/11/14/bb500fc1-b9e1-4862-84dd-90ef75fb36e0_43.jpeg?w=700&q=90"
+        >
+          IPHONE12
+        </option>
+        <option
+          value="https://gadgetren.com/wp-content/uploads/2019/07/Sneak-Peek-ASUS-ROG-Strix-Hero-Scar-III.jpg"
+        >
+          LAPTOP ROG
+        </option>
+        <option
+          value="https://media.hitekno.com/thumbs/2018/07/13/58085-robot/730x480-img-58085-robot.jpg"
+        >
+          ROBOT AI
+        </option>
+      </select>
+    </center>
+    <br />
+    <img
+      src="https://awsimages.detik.net.id/content/2014/03/30/157/kampanye-jujur-CV.jpg"
+      style="width: 100%"
+      id="gambar"
+    />
+  </body>
+  <script type="text/javascript">
+    function gantigambar() {
+      let gambar = document.getElementById("listgambar").value;
+      document.getElementById("gambar").src = gambar;
+      alert("Ini Gambar " + gambar);
+    }
+  </script>
+</html>
